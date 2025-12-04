@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BluTalk - Seu assistente inteligente para serviços públicos em Blumenau</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- O arquivo styles.css será gerado na próxima fase com as classes Tailwind CSS utilizadas -->
+</head>
+
+<body class="min-h-screen bg-blue-50">
+    <!-- Hero Component -->
+    <section class="relative overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1725278585439-cf691c433dc4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCbHVtZW5hdSUyMEJyYXppbCUyMGNpdHl8ZW58MXx8fHwxNzY0NzAxNTM1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                alt="Blumenau city landmarks" class="w-full h-full object-cover blur-sm" />
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-900/90 via-blue-800/85 to-blue-900/90"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 container mx-auto px-4 py-16 md:py-24 lg:py-32">
+            <div class="max-w-4xl mx-auto text-center">
+                <!-- AI Avatar -->
+                <div class="flex justify-center mb-8">
+                    <div class="relative">
+                        <div class="absolute inset-0 rounded-full blur-xl opacity-30 animate-pulse"></div>
+                        <div class="relative bg-white rounded-full p-6 shadow-2xl">
+                            <img src="assets/logo.png" alt="BluTalk" class="w-16 h-16 md:w-20 md:h-20 object-contain" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Headline -->
+                <h1 class="text-white mb-6 px-4 text-4xl md:text-5xl lg:text-6xl font-extrabold">
+                    Resolva burocracias sem sair de casa
+                </h1>
+
+                <!-- Subheadline -->
+                <p class="text-blue-100 text-xl md:text-2xl mb-8 px-4 leading-relaxed">
+                    Seu assistente inteligente para serviços públicos em Blumenau
+                </p>
+
+                <!-- Trust Indicators -->
+                <div class="flex flex-wrap justify-center gap-6 text-white/90 text-sm md:text-base">
+                    <div class="flex items-center gap-2">
+                        <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+                        <span>Disponível 24/7</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+                        <span>Informações Oficiais</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+                        <span>Serviço Gratuito</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ChatInput Component -->
+    <section class="relative z-20 -mt-8 mb-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <div class="relative">
+                    <!-- Chat Button Card -->
+                    <div class="bg-white rounded-2xl shadow-2xl border-2 border-blue-100 overflow-hidden">
+                        <div class="p-6 md:p-8">
+                            <label class="block text-blue-900 mb-4 text-center text-lg font-semibold">
+                                O que você precisa resolver hoje?
+                            </label>
+                            <a href="https://wa.me/554797762925?text=Olá,%20preciso%20de%20ajuda%20com%20serviços%20públicos"
+                                target="_blank"
+                                class="w-full px-6 py-5 bg-green-600 hover:bg-green-700 text-white rounded-xl transition-colors flex items-center justify-center gap-3 shadow-lg hover:shadow-xl text-decoration-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                                    <path d="M7.9 20A9.3 9.3 0 0 1 4 16.1V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3.9l-3.6 3.6c-.4.4-1 .4-1.4 0L7.9 20z" />
+                                </svg>
+                                <span class="text-lg">Converse com o assistente pelo WhatsApp!</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Component -->
+    <section>
+        <div class="container mx-auto px-[16px] py-[30px]">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-blue-900 mb-4 text-3xl md:text-4xl font-bold">
+                    Tudo que você precisa em um só lugar
+                </h2>
+                <p class="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">
+                    Economize tempo e evite filas com nosso assistente inteligente
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+                <!-- Feature 1: Listas de Documentos -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-blue-600">
+                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" x2="8" y1="13" y2="13" />
+                            <line x1="16" x2="8" y1="17" y2="17" />
+                            <line x1="10" x2="8" y1="9" y2="9" />
+                        </svg>
+                    </div>
+                    <h3 class="text-blue-900 mb-3 text-xl font-semibold">
+                        Listas de Documentos
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Receba listas completas dos documentos necessários para qualquer serviço público. Nunca mais esqueça um documento.
+                    </p>
+                </div>
+
+                <!-- Feature 2: Locais de Atendimento -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                    <div class="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-orange-600">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                    </div>
+                    <h3 class="text-blue-900 mb-3 text-xl font-semibold">
+                        Locais de Atendimento
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Encontre os escritórios e centrais de atendimento mais próximos com endereços, mapas e informações de acessibilidade.
+                    </p>
+                </div>
+
+                <!-- Feature 3: Horários de Funcionamento -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-blue-600">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                    </div>
+                    <h3 class="text-blue-900 mb-3 text-xl font-semibold">
+                        Horários de Funcionamento
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Consulte disponibilidade em tempo real e horários de funcionamento. Planeje sua visita e evite deslocamentos desnecessários.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Additional Benefits -->
+            <div class="mt-16 md:mt-20 bg-blue-900 rounded-3xl p-8 md:p-12 text-center max-w-4xl mx-auto">
+                <h3 class="text-white mb-6 text-2xl md:text-3xl font-bold">
+                    Confiado por milhares de cidadãos de Blumenau
+                </h3>
+                <div class="grid grid-cols-3 gap-8 mb-8">
+                    <div>
+                        <div class="text-orange-400 mb-2 text-3xl md:text-4xl font-extrabold">50K+</div>
+                        <div class="text-blue-100 text-sm md:text-base">Perguntas Respondidas</div>
+                    </div>
+                    <div>
+                        <div class="text-orange-400 mb-2 text-3xl md:text-4xl font-extrabold">98%</div>
+                        <div class="text-blue-100 text-sm md:text-base">Taxa de Satisfação</div>
+                    </div>
+                    <div>
+                        <div class="text-orange-400 mb-2 text-3xl md:text-4xl font-extrabold">24/7</div>
+                        <div class="text-blue-100 text-sm md:text-base">Disponibilidade</div>
+                    </div>
+                </div>
+                <p class="text-blue-100 text-sm md:text-base">
+                    Desenvolvido em parceria com a Prefeitura de Blumenau
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <footer class="bg-blue-950 text-white py-12 md:py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-[rgb(255,255,255)] rounded-lg p-2">
+                            <img src="assets/logo.png" alt="BluTalk" class="w-6 h-6 object-contain" />
+                        </div>
+                        <span class="font-semibold text-lg">BluTalk Blumenau</span>
+                    </div>
+                    <p class="text-blue-200 text-sm leading-relaxed">
+                        Seu assistente inteligente para serviços públicos em Blumenau, Santa Catarina.
+                    </p>
+                </div>
+
+                <!-- Contact -->
+                <div class="md:ml-auto">
+                    <h4 class="mb-4 text-xl font-semibold">Contato</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mt-1 flex-shrink-0 text-orange-400">
+                                <rect width="20" height="16" x="2" y="4" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg>
+                            <span class="text-blue-200">contato@blumenau.sc.gov.br</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mt-1 flex-shrink-0 text-orange-400">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-3.75-2.92 19.5 19.5 0 0 1-2.92-3.75A19.79 19.79 0 0 1 2 6.18 2 2 0 0 1 4.08 4h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 12c2.4 2.84 5.27 5.7 8.09 8.09l1.6-1.6a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            <span class="text-blue-200">156 (Local calls)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mt-1 flex-shrink-0 text-orange-400">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span class="text-blue-200">Blumenau, Santa Catarina, Brazil</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-blue-900 text-center text-sm text-blue-300">
+                <p>© 2025 Prefeitura Municipal de Blumenau. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
