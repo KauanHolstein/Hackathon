@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BluTalk - Seu assistente inteligente para serviços públicos em Blumenau</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- O arquivo styles.css será gerado na próxima fase com as classes Tailwind CSS utilizadas -->
 </head>
 
 <body class="min-h-screen bg-blue-50">
@@ -13,55 +12,110 @@
     <section class="relative overflow-hidden">
         <!-- Background Image with Overlay -->
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1725278585439-cf691c433dc4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCbHVtZW5hdSUyMEJyYXppbCUyMGNpdHl8ZW58MXx8fHwxNzY0NzAxNTM1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            <img src="https://images.unsplash.com/photo-1725278585439-cf691c433dc4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxCbHVtZW5hdSUyMEJyYXppbCUyMGNpdHl8ZW58fHwxNzY0NzAxNTM1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                 alt="Blumenau city landmarks" class="w-full h-full object-cover blur-sm" />
             <div class="absolute inset-0 bg-gradient-to-br from-blue-900/90 via-blue-800/85 to-blue-900/90"></div>
         </div>
 
         <!-- Content -->
         <div class="relative z-10 container mx-auto px-4 py-16 md:py-24 lg:py-32">
-            <div class="max-w-4xl mx-auto text-center">
-                <!-- AI Avatar -->
-                <div class="flex justify-center mb-8">
-                    <div class="relative">
-                        <div class="absolute inset-0 rounded-full blur-xl opacity-30 animate-pulse"></div>
-                        <div class="relative bg-white rounded-full p-6 shadow-2xl">
-                            <img src="assets/logo.png" alt="BluTalk" class="w-16 h-16 md:w-20 md:h-20 object-contain" />
+            <div class="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12 px-[0px] py-[-5px]">
+                <!-- Left Side - Hero Content -->
+                <div class="flex-1 text-center flex flex-col min-h-[530px]">
+                    <!-- AI Avatar -->
+                    <div class="flex justify-center mb-12">
+                        <div class="relative">
+                            <div class="absolute inset-0 rounded-full blur-xl opacity-30 animate-pulse"></div>
+                            <div class="relative bg-white rounded-full p-8 shadow-2xl">
+                                <img src="assets/logo.png" alt="BluTalk" class="w-32 h-32 md:w-55 md:h-55 object-contain" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Headline -->
+                    <h1 class="text-white mb-8 px-4 text-4xl md:text-5xl lg:text-6xl font-extrabold">
+                        Resolva burocracias sem sair de casa
+                    </h1>
+
+                    <!-- Subheadline -->
+                    <p class="text-blue-100 text-xl md:text-2xl mb-12 px-4 leading-relaxed">
+                        Seu assistente inteligente para serviços públicos em Blumenau
+                    </p>
+
+                    <!-- Trust Indicators -->
+                    <div class="flex flex-wrap justify-center gap-6 text-white/90 text-sm md:text-base px-4">
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+                            <span>Disponível 24/7</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+                            <span>Informações Oficiais</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+                            <span>Serviço Gratuito</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Headline -->
-                <h1 class="text-white mb-6 px-4 text-4xl md:text-5xl lg:text-6xl font-extrabold">
-                    Resolva burocracias sem sair de casa
-                </h1>
-
-                <!-- Subheadline -->
-                <p class="text-blue-100 text-xl md:text-2xl mb-8 px-4 leading-relaxed">
-                    Seu assistente inteligente para serviços públicos em Blumenau
-                </p>
-
-                <!-- Trust Indicators -->
-                <div class="flex flex-wrap justify-center gap-6 text-white/90 text-sm md:text-base">
-                    <div class="flex items-center gap-2">
-                        <div class="w-2 h-2 bg-green-400 rounded-full"></div>
-                        <span>Disponível 24/7</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <div class="w-2 h-2 bg-green-400 rounded-full"></div>
-                        <span>Informações Oficiais</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <div class="w-2 h-2 bg-green-400 rounded-full"></div>
-                        <span>Serviço Gratuito</span>
+                <!-- Right Side - Chat Widget (Static Representation) -->
+                <div class="flex-shrink-0 w-full lg:w-96">
+                    <div class="relative bg-white rounded-3xl p-6 shadow-2xl">
+                        
+                        <!-- Messages (Static) -->
+                        <div class="space-y-3 h-80 overflow-y-auto mb-5 pr-2">
+                            <!-- Bot Message 1: rounded-3xl rounded-bl-none -->
+                            <div class="flex justify-start">
+                                <div class="max-w-[85%] px-5 py-3 rounded-3xl bg-gray-100 text-gray-800 rounded-bl-none">
+                                    Olá! Como posso ajudá-lo hoje?
+                                </div>
+                            </div>
+                            <!-- User Message 1: rounded-3xl rounded-br-none -->
+                            <div class="flex justify-end">
+                                <div class="max-w-[85%] px-5 py-3 rounded-3xl bg-blue-600 text-white rounded-br-none">
+                                    Preciso tirar uma certidão de nascimento
+                                </div>
+                            </div>
+                            <!-- Bot Message 2: rounded-3xl rounded-bl-none -->
+                            <div class="flex justify-start">
+                                <div class="max-w-[85%] px-5 py-3 rounded-3xl bg-gray-100 text-gray-800 rounded-bl-none">
+                                    Claro! Para tirar uma certidão de nascimento, você precisa dos seguintes documentos: RG e CPF dos pais, certidão de casamento (se aplicável), e declaração de nascido vivo do hospital.
+                                </div>
+                            </div>
+                            <!-- User Message 2: rounded-3xl rounded-br-none -->
+                            <div class="flex justify-end">
+                                <div class="max-w-[85%] px-5 py-3 rounded-3xl bg-blue-600 text-white rounded-br-none">
+                                    Obrigado! Uma última pergunta: onde fica o posto de saúde mais próximo?
+                                </div>
+                            </div>
+                            <!-- Bot Message 3: rounded-3xl rounded-bl-none -->
+                            <div class="flex justify-start">
+                                <div class="max-w-[85%] px-5 py-3 rounded-3xl bg-gray-100 text-gray-800 rounded-bl-none">
+                                    Para te ajudar com isso, preciso saber em qual bairro você está. Blumenau tem diversos Centros de Saúde espalhados pela cidade. Pode me informar seu bairro?
+                                </div>
+                            </div>
+                            <!-- User Message 3: rounded-3xl rounded-br-none -->
+                            <div class="flex justify-end">
+                                <div class="max-w-[85%] px-5 py-3 rounded-3xl bg-blue-600 text-white rounded-br-none">
+                                    Estou no Centro
+                                </div>
+                            </div>
+                            <!-- Bot Message 4: rounded-3xl rounded-bl-none -->
+                            <div class="flex justify-start">
+                                <div class="max-w-[85%] px-5 py-3 rounded-3xl bg-gray-100 text-gray-800 rounded-bl-none">
+                                    O Centro de Saúde mais próximo é o CS Centro, localizado na Rua Itajaí, 245. Funciona de segunda a sexta, das 7h às 19h. Para consultas, ligue 156 para agendar!
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ChatInput Component -->
-    <section class="relative z-20 -mt-8 mb-16">
+    <!-- ChatInput Component (WhatsApp Button) -->
+    <section class="relative z-20 -mt-8 mb-16 lg:hidden">
         <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto">
                 <div class="relative">
